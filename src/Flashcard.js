@@ -6,7 +6,7 @@ export default function Flashcard( {flashcard}) {
 
     return (
         <div 
-        className={`card ${flip ? 'flip' : '' }`}
+        className={`card ${flip ? 'flip' : ''}`}
         onClick={() => setFlip(!flip)}
         >
             <div className="front">
@@ -18,7 +18,6 @@ export default function Flashcard( {flashcard}) {
                 </div>
             </div>
             <div className="back">{flashcard.answer}</div>
-            {flip ? flashcard.answer : flashcard.question}
         </div>
     )
 }

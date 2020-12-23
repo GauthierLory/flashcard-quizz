@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FlashcardList from './FlashcardList';
+import './app.css'
 
 function App() {
   const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
@@ -14,7 +15,8 @@ const SAMPLE_FLASHCARDS = [
     options:[
       '2',
       '3',
-      '4'
+      '4',
+      '18'
     ]
   },
   {
@@ -24,7 +26,8 @@ const SAMPLE_FLASHCARDS = [
     options:[
       '5',
       '6',
-      '7'
+      '7',
+      '19'
     ]
   }
 ]
