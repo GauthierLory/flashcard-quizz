@@ -24,7 +24,11 @@ function App() {
       }))
     })
   }, [])
-  return <FlashcardList flashcards={flashcards}/>
+  return (
+    <div className="container">
+      <FlashcardList flashcards={flashcards}/>
+    </div>
+  )
 }
 
 function decodeString(str){
