@@ -47,7 +47,7 @@ function App() {
         return{
           id :`${index}-${Date.now()}`,
           question: decodeString(questionItem.question),
-          answer: questionItem.correct_answer,
+          answer: answer,
           options: options.sort(() => Math.random() - .1)
         }
       }))
